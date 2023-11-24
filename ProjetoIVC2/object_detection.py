@@ -1,8 +1,6 @@
 from ultralytics import YOLO
-import os.path
 import cv2
-import time
-import numpy as np
+
 
 model = YOLO("yolov8n.pt")
 

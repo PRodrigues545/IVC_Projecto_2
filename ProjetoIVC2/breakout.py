@@ -13,7 +13,6 @@ import math
 import cv2
 import pygame
 import camara
-import object_detection
 
 # Define some colors
 black = (0, 0, 0)
@@ -286,6 +285,7 @@ def game_loop():
             textpos = text.get_rect(centerx=background.get_width() / 2)
             textpos.top = 300
             screen.blit(text, textpos)
+            game_loop()
 
         # See if the ball hits the player paddle
         if pygame.sprite.spritecollide(player, balls, False):
